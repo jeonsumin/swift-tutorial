@@ -1,5 +1,3 @@
-# swift-tutorial
-
 # swift 튜토리얼 따라하면서 익히기 
 
 
