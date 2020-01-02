@@ -120,7 +120,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYW-xP-fp1">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="Q62-dx-ri0"/>
+                                    <barButtonItem systemItem="compose" id="Q62-dx-ri0">
+                                        <connections>
+                                            <segue destination="K8M-8p-XGu" kind="presentation" id="FSd-gl-Zuv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KgE-Oz-riP"/>
+                                    <barButtonItem systemItem="trash" id="4nC-9e-Wet">
+                                        <color key="tintColor" red="1" green="0.012087071650987546" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="htI-ME-Nkm"/>
+                                    <barButtonItem systemItem="action" id="UXz-dW-52S"/>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pq7-TD-imE">
@@ -220,4 +230,7 @@
             <point key="canvasLocation" x="1121" y="-523"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FSd-gl-Zuv"/>
+    </inferredMetricsTieBreakers>
 </document>
