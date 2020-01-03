@@ -122,7 +122,7 @@
                                 <items>
                                     <barButtonItem systemItem="compose" id="Q62-dx-ri0">
                                         <connections>
-                                            <segue destination="K8M-8p-XGu" kind="presentation" id="FSd-gl-Zuv"/>
+                                            <segue destination="K8M-8p-XGu" kind="presentation" id="6hS-Xa-Mpf"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="KgE-Oz-riP"/>
@@ -190,6 +190,9 @@
                         <viewLayoutGuide key="safeArea" id="fLr-M2-csO"/>
                     </view>
                     <navigationItem key="navigationItem" title="메모 보기" id="gHi-in-1x6"/>
+                    <connections>
+                        <outlet property="memoTableView" destination="pq7-TD-imE" id="ine-sh-DWz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdD-q2-sSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,6 +234,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FSd-gl-Zuv"/>
+        <segue reference="6hS-Xa-Mpf"/>
     </inferredMetricsTieBreakers>
 </document>
