@@ -9,6 +9,15 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    
+    //공유 버튼 액션 메소드
+    @IBAction func share(_ sender: Any) {
+        guard let memo = memo?.content else { return }
+        let vc = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
+        present(vc, animated: true, completion: nil)
+    }
+    
     //삭제 액션 메소드
     @IBAction func deleteMemo(_ sender: Any) {
         let alert = UIAlertController(title: "삭제확인", message: "메모를 삭제할까요?", preferredStyle: .alert)
@@ -26,7 +35,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var memoTableView: UITableView!
     var memo: Memo?
-    
+    //날자 포맷 설정
     let formatter: DateFormatter = {
         let f = DateFormatter()
         f.dateStyle = .long

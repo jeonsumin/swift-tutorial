@@ -133,7 +133,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="htI-ME-Nkm"/>
-                                    <barButtonItem systemItem="action" id="UXz-dW-52S"/>
+                                    <barButtonItem systemItem="action" id="UXz-dW-52S">
+                                        <connections>
+                                            <action selector="share:" destination="IkS-nb-eXQ" id="Yf5-6H-uE3"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pq7-TD-imE">
