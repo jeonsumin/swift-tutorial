@@ -32,7 +32,16 @@ class DataManager{
         }catch{
             print(error)
         }
-
+    }
+    
+    func addNewMemo(_ memo: String?){
+        let newMemo = Memo(context: mainContent)
+        newMemo.content = memo
+        newMemo.insertDate = Date()
+        
+        memoList.insert(newMemo, at: 0)
+        
+        saveContext()
     }
     // MARK: - Core Data stack
     
