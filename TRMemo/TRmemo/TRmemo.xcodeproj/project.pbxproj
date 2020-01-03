@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AB1D62223BF4E740054C568 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1D62123BF4E740054C568 /* DataManager.swift */; };
 		1AECD375238FDD6600DF01BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AECD374238FDD6600DF01BF /* AppDelegate.swift */; };
 		1AECD377238FDD6600DF01BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AECD376238FDD6600DF01BF /* ViewController.swift */; };
 		1AECD37A238FDD6600DF01BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AECD378238FDD6600DF01BF /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AB1D62123BF4E740054C568 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1AECD371238FDD6600DF01BF /* TRmemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRmemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AECD374238FDD6600DF01BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AECD376238FDD6600DF01BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB1D62023BF4E620054C568 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1AB1D62123BF4E740054C568 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		1AECD368238FDD6600DF01BF = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		1AECD373238FDD6600DF01BF /* TRmemo */ = {
 			isa = PBXGroup;
 			children = (
+				1AB1D62023BF4E620054C568 /* Data */,
 				1AECD389238FDF8A00DF01BF /* Model */,
 				1AECD374238FDD6600DF01BF /* AppDelegate.swift */,
 				1AECD376238FDD6600DF01BF /* ViewController.swift */,
@@ -159,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AECD377238FDD6600DF01BF /* ViewController.swift in Sources */,
+				1AB1D62223BF4E740054C568 /* DataManager.swift in Sources */,
 				1AECD37D238FDD6600DF01BF /* TRmemo.xcdatamodeld in Sources */,
 				1AECD38D238FE14800DF01BF /* MemoListTableViewController.swift in Sources */,
 				1AECD38F238FEE7D00DF01BF /* ComposeViewController.swift in Sources */,

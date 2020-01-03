@@ -20,7 +20,7 @@ class MemoListTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell){
-                let target = Memo.dummyMemoList[indexPath.row]
+                let target = DataManager.shared.memoList[indexPath.row]
             if let vc = segue.destination as? DetailViewController{
                 vc.memo = target
             }
@@ -43,6 +43,8 @@ class MemoListTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
+        DataManager.shared.fetchMemo()
         tableView.reloadData()
         
     }
@@ -50,7 +52,7 @@ class MemoListTableViewController: UITableViewController {
     // 몇개를 표시해줄지 지정
     //테이블을 구현할때는 필수 메소드
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Memo.dummyMemoList.count
+        return DataManager.shared.memoList.count
     }
 
     //어떠한 데이터를 어떻게 표시하는지 지정
@@ -59,9 +61,9 @@ class MemoListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let target = Memo.dummyMemoList[indexPath.row]
+        let target = DataManager.shared.memoList[indexPath.row]
         cell.textLabel?.text = target.content
-        cell.detailTextLabel?.text = formatter.string(from: target.insertDate)
+        cell.detailTextLabel?.text = formatter.string(for: target.insertDate)
         
         return cell
     }

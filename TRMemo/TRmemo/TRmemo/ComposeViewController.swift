@@ -20,9 +20,9 @@ class ComposeViewController: UIViewController {
     @IBAction func save(_ sender: Any) {
         let memo = memoTextView.text
         
-        let newMemo = Memo(content: memo ?? "")
-        Memo.dummyMemoList.append(newMemo)
-        
+//        let newMemo = Memo(content: memo ?? "")
+//        Memo.dummyMemoList.append(newMemo)
+//        
         dismiss(animated: true, completion: nil)
     }
     
