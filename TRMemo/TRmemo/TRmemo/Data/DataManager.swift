@@ -28,7 +28,7 @@ class DataManager{
         request.sortDescriptors = [sortByDateDesc]
         
         do {
-        memoList = try mainContent.fetch(request)
+            memoList = try mainContent.fetch(request)
         }catch{
             print(error)
         }
@@ -42,6 +42,13 @@ class DataManager{
         memoList.insert(newMemo, at: 0)
         
         saveContext()
+    }
+    
+    func deleteMemo(_ memo: Memo?){
+        if let memo = memo{
+            mainContent.delete(memo)
+            saveContext()
+        }
     }
     // MARK: - Core Data stack
     
@@ -70,5 +77,5 @@ class DataManager{
             }
         }
     }
-
+    
 }
