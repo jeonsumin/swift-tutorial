@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A4D387823BF67E900CACECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D387723BF67E900CACECB /* AppDelegate.swift */; };
-		1A4D387A23BF67E900CACECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D387923BF67E900CACECB /* ViewController.swift */; };
-		1A4D387D23BF67E900CACECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D387B23BF67E900CACECB /* Main.storyboard */; };
-		1A4D388023BF67E900CACECB /* TRweather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D387E23BF67E900CACECB /* TRweather.xcdatamodeld */; };
-		1A4D388223BF67EA00CACECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D388123BF67EA00CACECB /* Assets.xcassets */; };
-		1A4D388523BF67EA00CACECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D388323BF67EA00CACECB /* LaunchScreen.storyboard */; };
+		1AA6759823C0B25400506318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA6759723C0B25400506318 /* AppDelegate.swift */; };
+		1AA6759A23C0B25400506318 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA6759923C0B25400506318 /* ViewController.swift */; };
+		1AA6759D23C0B25400506318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA6759B23C0B25400506318 /* Main.storyboard */; };
+		1AA675A023C0B25400506318 /* TRNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AA6759E23C0B25400506318 /* TRNews.xcdatamodeld */; };
+		1AA675A223C0B25500506318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA675A123C0B25500506318 /* Assets.xcassets */; };
+		1AA675A523C0B25500506318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA675A323C0B25500506318 /* LaunchScreen.storyboard */; };
+		1AA675AD23C0B8BE00506318 /* Type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA675AC23C0B8BE00506318 /* Type1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A4D387423BF67E900CACECB /* TRweather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRweather.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A4D387723BF67E900CACECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A4D387923BF67E900CACECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A4D387C23BF67E900CACECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A4D387F23BF67E900CACECB /* TRweather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TRweather.xcdatamodel; sourceTree = "<group>"; };
-		1A4D388123BF67EA00CACECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A4D388423BF67EA00CACECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1A4D388623BF67EA00CACECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA6759423C0B25400506318 /* TRNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA6759723C0B25400506318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AA6759923C0B25400506318 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AA6759C23C0B25400506318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AA6759F23C0B25400506318 /* TRNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TRNews.xcdatamodel; sourceTree = "<group>"; };
+		1AA675A123C0B25500506318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AA675A423C0B25500506318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AA675A623C0B25500506318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA675AC23C0B8BE00506318 /* Type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A4D387123BF67E900CACECB /* Frameworks */ = {
+		1AA6759123C0B25400506318 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A4D386B23BF67E800CACECB = {
+		1AA6758B23C0B25400506318 = {
 			isa = PBXGroup;
 			children = (
-				1A4D387623BF67E900CACECB /* TRweather */,
-				1A4D387523BF67E900CACECB /* Products */,
+				1AA6759623C0B25400506318 /* TRNews */,
+				1AA6759523C0B25400506318 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1A4D387523BF67E900CACECB /* Products */ = {
+		1AA6759523C0B25400506318 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A4D387423BF67E900CACECB /* TRweather.app */,
+				1AA6759423C0B25400506318 /* TRNews.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A4D387623BF67E900CACECB /* TRweather */ = {
+		1AA6759623C0B25400506318 /* TRNews */ = {
 			isa = PBXGroup;
 			children = (
-				1A4D387723BF67E900CACECB /* AppDelegate.swift */,
-				1A4D387923BF67E900CACECB /* ViewController.swift */,
-				1A4D387B23BF67E900CACECB /* Main.storyboard */,
-				1A4D388123BF67EA00CACECB /* Assets.xcassets */,
-				1A4D388323BF67EA00CACECB /* LaunchScreen.storyboard */,
-				1A4D388623BF67EA00CACECB /* Info.plist */,
-				1A4D387E23BF67E900CACECB /* TRweather.xcdatamodeld */,
+				1AA6759723C0B25400506318 /* AppDelegate.swift */,
+				1AA6759923C0B25400506318 /* ViewController.swift */,
+				1AA6759B23C0B25400506318 /* Main.storyboard */,
+				1AA675A123C0B25500506318 /* Assets.xcassets */,
+				1AA675A323C0B25500506318 /* LaunchScreen.storyboard */,
+				1AA675A623C0B25500506318 /* Info.plist */,
+				1AA6759E23C0B25400506318 /* TRNews.xcdatamodeld */,
+				1AA675AC23C0B8BE00506318 /* Type1.swift */,
 			);
-			path = TRweather;
+			path = TRNews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A4D387323BF67E900CACECB /* TRweather */ = {
+		1AA6759323C0B25400506318 /* TRNews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A4D388923BF67EA00CACECB /* Build configuration list for PBXNativeTarget "TRweather" */;
+			buildConfigurationList = 1AA675A923C0B25500506318 /* Build configuration list for PBXNativeTarget "TRNews" */;
 			buildPhases = (
-				1A4D387023BF67E900CACECB /* Sources */,
-				1A4D387123BF67E900CACECB /* Frameworks */,
-				1A4D387223BF67E900CACECB /* Resources */,
+				1AA6759023C0B25400506318 /* Sources */,
+				1AA6759123C0B25400506318 /* Frameworks */,
+				1AA6759223C0B25400506318 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TRweather;
-			productName = TRweather;
-			productReference = 1A4D387423BF67E900CACECB /* TRweather.app */;
+			name = TRNews;
+			productName = TRNews;
+			productReference = 1AA6759423C0B25400506318 /* TRNews.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1A4D386C23BF67E800CACECB /* Project object */ = {
+		1AA6758C23C0B25400506318 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Sumin Jeon";
 				TargetAttributes = {
-					1A4D387323BF67E900CACECB = {
+					1AA6759323C0B25400506318 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 1A4D386F23BF67E800CACECB /* Build configuration list for PBXProject "TRweather" */;
+			buildConfigurationList = 1AA6758F23C0B25400506318 /* Build configuration list for PBXProject "TRNews" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 1A4D386B23BF67E800CACECB;
-			productRefGroup = 1A4D387523BF67E900CACECB /* Products */;
+			mainGroup = 1AA6758B23C0B25400506318;
+			productRefGroup = 1AA6759523C0B25400506318 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A4D387323BF67E900CACECB /* TRweather */,
+				1AA6759323C0B25400506318 /* TRNews */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A4D387223BF67E900CACECB /* Resources */ = {
+		1AA6759223C0B25400506318 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4D388523BF67EA00CACECB /* LaunchScreen.storyboard in Resources */,
-				1A4D388223BF67EA00CACECB /* Assets.xcassets in Resources */,
-				1A4D387D23BF67E900CACECB /* Main.storyboard in Resources */,
+				1AA675A523C0B25500506318 /* LaunchScreen.storyboard in Resources */,
+				1AA675A223C0B25500506318 /* Assets.xcassets in Resources */,
+				1AA6759D23C0B25400506318 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A4D387023BF67E900CACECB /* Sources */ = {
+		1AA6759023C0B25400506318 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4D387A23BF67E900CACECB /* ViewController.swift in Sources */,
-				1A4D388023BF67E900CACECB /* TRweather.xcdatamodeld in Sources */,
-				1A4D387823BF67E900CACECB /* AppDelegate.swift in Sources */,
+				1AA6759A23C0B25400506318 /* ViewController.swift in Sources */,
+				1AA675AD23C0B8BE00506318 /* Type1.swift in Sources */,
+				1AA6759823C0B25400506318 /* AppDelegate.swift in Sources */,
+				1AA675A023C0B25400506318 /* TRNews.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1A4D387B23BF67E900CACECB /* Main.storyboard */ = {
+		1AA6759B23C0B25400506318 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1A4D387C23BF67E900CACECB /* Base */,
+				1AA6759C23C0B25400506318 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1A4D388323BF67EA00CACECB /* LaunchScreen.storyboard */ = {
+		1AA675A323C0B25500506318 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1A4D388423BF67EA00CACECB /* Base */,
+				1AA675A423C0B25500506318 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1A4D388723BF67EA00CACECB /* Debug */ = {
+		1AA675A723C0B25500506318 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		1A4D388823BF67EA00CACECB /* Release */ = {
+		1AA675A823C0B25500506318 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,38 +286,38 @@
 			};
 			name = Release;
 		};
-		1A4D388A23BF67EA00CACECB /* Debug */ = {
+		1AA675AA23C0B25500506318 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J74H985T9L;
-				INFOPLIST_FILE = TRweather/Info.plist;
+				INFOPLIST_FILE = TRNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Terry.TRweather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Terry.TRNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1A4D388B23BF67EA00CACECB /* Release */ = {
+		1AA675AB23C0B25500506318 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J74H985T9L;
-				INFOPLIST_FILE = TRweather/Info.plist;
+				INFOPLIST_FILE = TRNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Terry.TRweather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Terry.TRNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,20 +327,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A4D386F23BF67E800CACECB /* Build configuration list for PBXProject "TRweather" */ = {
+		1AA6758F23C0B25400506318 /* Build configuration list for PBXProject "TRNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A4D388723BF67EA00CACECB /* Debug */,
-				1A4D388823BF67EA00CACECB /* Release */,
+				1AA675A723C0B25500506318 /* Debug */,
+				1AA675A823C0B25500506318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A4D388923BF67EA00CACECB /* Build configuration list for PBXNativeTarget "TRweather" */ = {
+		1AA675A923C0B25500506318 /* Build configuration list for PBXNativeTarget "TRNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A4D388A23BF67EA00CACECB /* Debug */,
-				1A4D388B23BF67EA00CACECB /* Release */,
+				1AA675AA23C0B25500506318 /* Debug */,
+				1AA675AB23C0B25500506318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -344,17 +348,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1A4D387E23BF67E900CACECB /* TRweather.xcdatamodeld */ = {
+		1AA6759E23C0B25400506318 /* TRNews.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1A4D387F23BF67E900CACECB /* TRweather.xcdatamodel */,
+				1AA6759F23C0B25400506318 /* TRNews.xcdatamodel */,
 			);
-			currentVersion = 1A4D387F23BF67E900CACECB /* TRweather.xcdatamodel */;
-			path = TRweather.xcdatamodeld;
+			currentVersion = 1AA6759F23C0B25400506318 /* TRNews.xcdatamodel */;
+			path = TRNews.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 1A4D386C23BF67E800CACECB /* Project object */;
+	rootObject = 1AA6758C23C0B25400506318 /* Project object */;
 }
