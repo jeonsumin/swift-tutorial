@@ -14,6 +14,7 @@
 		1AA675A223C0B25500506318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA675A123C0B25500506318 /* Assets.xcassets */; };
 		1AA675A523C0B25500506318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA675A323C0B25500506318 /* LaunchScreen.storyboard */; };
 		1AA675AD23C0B8BE00506318 /* Type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA675AC23C0B8BE00506318 /* Type1.swift */; };
+		1AA675AF23C0C7BD00506318 /* NewsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA675AE23C0C7BD00506318 /* NewsDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1AA675A423C0B25500506318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AA675A623C0B25500506318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA675AC23C0B8BE00506318 /* Type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1.swift; sourceTree = "<group>"; };
+		1AA675AE23C0C7BD00506318 /* NewsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1AA675A623C0B25500506318 /* Info.plist */,
 				1AA6759E23C0B25400506318 /* TRNews.xcdatamodeld */,
 				1AA675AC23C0B8BE00506318 /* Type1.swift */,
+				1AA675AE23C0C7BD00506318 /* NewsDetailController.swift */,
 			);
 			path = TRNews;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA675AF23C0C7BD00506318 /* NewsDetailController.swift in Sources */,
 				1AA6759A23C0B25400506318 /* ViewController.swift in Sources */,
 				1AA675AD23C0B8BE00506318 /* Type1.swift in Sources */,
 				1AA6759823C0B25400506318 /* AppDelegate.swift in Sources */,

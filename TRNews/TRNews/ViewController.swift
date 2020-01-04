@@ -83,22 +83,76 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    
+    //1. 상세화면 구현 >> main.storyboard .. NewsDetailController
+    //2. 상세회면으로 데이터 전달
+    //  1. talbeview delegate // 2. storyboard (segue)  두가지 방법
+    //3. 화면 이동 ( 이동하기전 값을 세팅!!)
+    
+    
     //클릭 감지
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Click!! >>> \(indexPath.row)")
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        //self == 자신 클래스 안의 함수들을 찾는다.
-        TableViewMain.delegate = self
-        TableViewMain.dataSource = self
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let NewsDetail = storyboard.instantiateViewController(withIdentifier: "NewsDetailController") as! NewsDetailController
         
-        getNews()
+        if let news = newsData {
+            
+            let row = news[indexPath.row]
+            
+            if let r = row as? Dictionary<String,Any>{
+                
+                if let imageUrl = r["urlToImage"] as? String{
+                    NewsDetail.imageUrl = imageUrl
+                }
+                
+                if let desc = r["description"] as? String{
+                    NewsDetail.desc = desc
+                }
+            }
+        }
+        //이동! - 수동
+        showDetailViewController(NewsDetail, sender: nil)
     }
+
+// 세그웨이 방법 : 부모(가나다) - 자식 (가나다)
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let id = segue.identifier, "NewsDetail" == id {
+        if let controller = segue.destination as? NewsDetailController {
+            
+            if let news = newsData {
+                let indexPath = sender as! IndexPath
+                let row = news[indexPath.row]
+                
+                if let r = row as? Dictionary<String,Any>{
+                    
+                    if let imageUrl = r["urlToImage"] as? String{
+                        controller.imageUrl =  imageUrl
+                    }
+                
+                    if let desc = r["description"] as? String{
+                        controller.desc = desc
+                    }
+                    
+                }
+            }
+        }
+    }
+    //이동! - 자동
+}
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
     
+    //self == 자신 클래스 안의 함수들을 찾는다.
+    TableViewMain.delegate = self
+    TableViewMain.dataSource = self
     
+    getNews()
+}
+
+
 }
 
