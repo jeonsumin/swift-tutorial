@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,58 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TRMusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adD-6A-cVR">
+                                <rect key="frame" x="62" y="174" width="291" height="189"/>
+                                <state key="normal" title="Button" image="button_play"/>
+                                <connections>
+                                    <action selector="TouchUpPlayBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="19u-Hb-9vc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-0t-qFp">
+                                <rect key="frame" x="171" y="403" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4KD-T8-H0A">
+                                <rect key="frame" x="60" y="455" width="295" height="31"/>
+                                <connections>
+                                    <action selector="SliderValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vt8-ii-2Oo"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TDK-0t-qFp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171" id="0y5-I6-VIV"/>
+                            <constraint firstItem="4KD-T8-H0A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="D2S-dw-KlN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="adD-6A-cVR" secondAttribute="trailing" constant="61" id="Ecq-ll-CJF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4KD-T8-H0A" secondAttribute="bottom" constant="377" id="P0e-Jc-nB7"/>
+                            <constraint firstItem="4KD-T8-H0A" firstAttribute="top" secondItem="TDK-0t-qFp" secondAttribute="bottom" constant="31" id="QfB-Ow-X78"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TDK-0t-qFp" secondAttribute="trailing" constant="171" id="Sfi-c5-XwY"/>
+                            <constraint firstItem="adD-6A-cVR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="XQR-pp-hTX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4KD-T8-H0A" secondAttribute="trailing" constant="61" id="gw1-16-4aT"/>
+                            <constraint firstItem="TDK-0t-qFp" firstAttribute="top" secondItem="adD-6A-cVR" secondAttribute="bottom" constant="40" id="nLh-J0-33H"/>
+                            <constraint firstItem="adD-6A-cVR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="xwo-V1-hT4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Playbtn" destination="adD-6A-cVR" id="p2b-SA-bgb"/>
+                        <outlet property="TimeLable" destination="TDK-0t-qFp" id="h4l-Z6-o6o"/>
+                        <outlet property="progressSlider" destination="4KD-T8-H0A" id="hYi-qs-wO9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_play" width="187" height="189"/>
+    </resources>
 </document>
