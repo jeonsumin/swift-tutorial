@@ -16,11 +16,15 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    //정보의 흐름을 가지고 있을때 push and pop 을 사용
     @IBAction func popToPrev(){
         self.navigationController?.popViewController(animated: true)
     }
 
+    //단순한 입력폼, 단순한 팝업
+    @IBAction func didmissModal(){
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
