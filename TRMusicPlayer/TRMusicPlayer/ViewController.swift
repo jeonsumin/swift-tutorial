@@ -68,13 +68,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     //플레이어 버튼 클릭 액션 메소드
     @IBAction func TouchUpPlayBtn(_ sender: UIButton) {
-        //print("플레이버튼 클릭!")
+        print("플레이버튼 클릭!")
         sender.isSelected = !sender.isSelected
         
         if sender.isSelected{
-            self.player?.play()
+            self.player.play()
         }else{
-            self.player?.pause()
+            self.player.pause()
         }
         
         if sender.isSelected{

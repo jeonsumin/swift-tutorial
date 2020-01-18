@@ -18,20 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adD-6A-cVR">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adD-6A-cVR">
                                 <rect key="frame" x="62" y="174" width="291" height="189"/>
                                 <state key="normal" title="Button" image="button_play"/>
                                 <connections>
-                                    <action selector="TouchUpPlayBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="19u-Hb-9vc"/>
+                                    <action selector="TouchUpPlayBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPv-1v-qQ3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-0t-qFp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-0t-qFp">
                                 <rect key="frame" x="171" y="403" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4KD-T8-H0A">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4KD-T8-H0A">
                                 <rect key="frame" x="60" y="455" width="295" height="31"/>
                                 <connections>
                                     <action selector="SliderValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vt8-ii-2Oo"/>
@@ -54,7 +54,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="Playbtn" destination="adD-6A-cVR" id="p2b-SA-bgb"/>
+                        <outlet property="Playbtn" destination="adD-6A-cVR" id="bOH-GS-g8j"/>
                         <outlet property="TimeLable" destination="TDK-0t-qFp" id="h4l-Z6-o6o"/>
                         <outlet property="progressSlider" destination="4KD-T8-H0A" id="hYi-qs-wO9"/>
                     </connections>
