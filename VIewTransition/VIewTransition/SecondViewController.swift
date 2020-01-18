@@ -12,7 +12,7 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("SecondViewController의 view 가 메로리에 로드됨")
+       // print("SecondViewController의 view 가 메로리에 로드됨")
     }
     
     override func viewWillAppear(_ animated: Bool) {
