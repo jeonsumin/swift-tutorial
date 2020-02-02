@@ -23,15 +23,17 @@ class ViewController: UIViewController {
                 //json parsing
                 do{
                     let json = try JSONSerialization.jsonObject(with: dataJson, options: []) as! Dictionary<String,Any> //json형식 heanding하기
-                    let articles = json["users"] as! Array<Dictionary<String,Any>>
+                    print("json : \(json["status"]!)")
+                    if json["status"]! as! String  == "ok"{
+                    let articles = json["articles"] as! Array<Dictionary<String,Any>>
                     print(articles)
-                    
                     for (_,value) in articles.enumerated() {
                         if let v = value as? Dictionary<String,Any>{
                             print("\(v["name"]!)")
+                            
                         }
                     }
-
+                    }
                 }catch{
                     print(error)
                 }
