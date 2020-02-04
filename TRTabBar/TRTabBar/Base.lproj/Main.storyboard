@@ -148,6 +148,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="delegate" destination="4N5-FB-EqL" id="OxB-Dn-vsC"/>
                         <segue destination="4Ue-Oo-w1v" kind="relationship" relationship="viewControllers" id="eBt-xN-Emy"/>
                         <segue destination="Fk3-wy-CzI" kind="relationship" relationship="viewControllers" id="syd-ib-DmM"/>
                         <segue destination="Q72-Cp-OuX" kind="relationship" relationship="viewControllers" id="Y0s-CE-vKP"/>
@@ -155,6 +156,7 @@
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7C-0A-VU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="4N5-FB-EqL" customClass="AnimUtil" customModule="TRTabBar" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="-834" y="-177"/>
         </scene>
