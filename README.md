@@ -1,6 +1,5 @@
 # swift 튜토리얼 따라하면서 익히기 
 
 ## 출처 
-- memo : https://www.youtube.com/watch?v=EvnR8zHgjJU ( 완료 )
-- News : https://www.youtube.com/watch?v=5ejngRFNy_k ( 완료 )
-- MusicPlayer : https://www.edwith.org/boostcourse-ios/lecture/19222
+- [부스트 코스](https://www.edwith.org/boostcourse-ios/joinLectures/12966)
+- [하울의 코딩교실](https://www.youtube.com/channel/UCScI4bsr-RaGdYSC2QAHWug)
