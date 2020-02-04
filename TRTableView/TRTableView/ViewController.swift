@@ -60,5 +60,12 @@ class CustomCell: UITableViewCell{
     @IBOutlet weak var profileMessage: UILabel!
     @IBOutlet weak var bubleSpeech: UIView!
     
+    @IBOutlet weak var cardView: UIView!{didSet{
+        cardView.layer.cornerRadius = 3.0
+        cardView.layer.masksToBounds = false
+        cardView.layer.shadowColor = UIColor.black.withAlphaComponent(1).cgColor
+        cardView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        cardView.layer.shadowOpacity = 0.16
+        }}
     
 }
