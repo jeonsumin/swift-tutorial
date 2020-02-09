@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var positionValue: String?
+    
+    @IBOutlet weak var frameView: UIView!
+    
+    var currentViewController:UIViewController?
+    
     @IBOutlet weak var NavigationButtonLeft: UIBarButtonItem!
     @IBAction func NavigationbuttonRight(_ sender: Any) {
         let alert = UIAlertController(title: "Mail", message: "도착한 메시지가 없습니다.", preferredStyle: UIAlertController.Style.alert)
@@ -24,8 +30,14 @@ class ViewController: UIViewController {
         NavigationButtonLeft.action = Selector("revealToggle:")
 
         
-        //스와이프 제스처
-self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        스와이프 제스처
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+
+        
+        if(positionValue != nil){
+            performSegue(withIdentifier: positionValue!, sender: nil)
+        }
+        
     }
 
 

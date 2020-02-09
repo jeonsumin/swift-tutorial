@@ -17,6 +17,7 @@
 		DEFAF5A523F041FA00BB5716 /* TRNavigationBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF5A423F041FA00BB5716 /* TRNavigationBarUITests.swift */; };
 		DEFAF5B623F048E400BB5716 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF5B523F048E400BB5716 /* SWRevealViewController.m */; };
 		DEFAF5B823F04D9400BB5716 /* RearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF5B723F04D9400BB5716 /* RearViewController.swift */; };
+		DEFAF5BA23F0547200BB5716 /* CustomeNavigationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF5B923F0547200BB5716 /* CustomeNavigationSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DEFAF5B423F048E400BB5716 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DEFAF5B523F048E400BB5716 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		DEFAF5B723F04D9400BB5716 /* RearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RearViewController.swift; sourceTree = "<group>"; };
+		DEFAF5B923F0547200BB5716 /* CustomeNavigationSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeNavigationSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				DEFAF58D23F041FA00BB5716 /* LaunchScreen.storyboard */,
 				DEFAF59023F041FA00BB5716 /* Info.plist */,
 				DEFAF5B723F04D9400BB5716 /* RearViewController.swift */,
+				DEFAF5B923F0547200BB5716 /* CustomeNavigationSegue.swift */,
 			);
 			path = TRNavigationBar;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				DEFAF58723F041F900BB5716 /* ViewController.swift in Sources */,
 				DEFAF58323F041F900BB5716 /* AppDelegate.swift in Sources */,
+				DEFAF5BA23F0547200BB5716 /* CustomeNavigationSegue.swift in Sources */,
 				DEFAF58523F041F900BB5716 /* SceneDelegate.swift in Sources */,
 				DEFAF5B623F048E400BB5716 /* SWRevealViewController.m in Sources */,
 				DEFAF5B823F04D9400BB5716 /* RearViewController.swift in Sources */,

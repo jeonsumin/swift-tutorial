@@ -43,6 +43,15 @@ class RearViewController :UIViewController,UITableViewDelegate,UITableViewDataSo
         
         return cell
       }
+    
+//    segue를 이용해서 셀 클릭시 이동
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destinationNavigation = segue.destination as! UINavigationController
+        let destinationViewController = destinationNavigation.topViewController as! ViewController
+        
+        destinationViewController.positionValue = category[self.tableView.indexPathForSelectedRow!.row]
+    }
       
 }
 
