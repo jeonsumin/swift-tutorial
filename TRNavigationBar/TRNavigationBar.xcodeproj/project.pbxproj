@@ -16,6 +16,7 @@
 		DEFAF59A23F041FA00BB5716 /* TRNavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF59923F041FA00BB5716 /* TRNavigationBarTests.swift */; };
 		DEFAF5A523F041FA00BB5716 /* TRNavigationBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF5A423F041FA00BB5716 /* TRNavigationBarUITests.swift */; };
 		DEFAF5B623F048E400BB5716 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF5B523F048E400BB5716 /* SWRevealViewController.m */; };
+		DEFAF5B823F04D9400BB5716 /* RearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF5B723F04D9400BB5716 /* RearViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DEFAF5B323F048E300BB5716 /* TRNavigationBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TRNavigationBar-Bridging-Header.h"; sourceTree = "<group>"; };
 		DEFAF5B423F048E400BB5716 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DEFAF5B523F048E400BB5716 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		DEFAF5B723F04D9400BB5716 /* RearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RearViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				DEFAF58B23F041FA00BB5716 /* Assets.xcassets */,
 				DEFAF58D23F041FA00BB5716 /* LaunchScreen.storyboard */,
 				DEFAF59023F041FA00BB5716 /* Info.plist */,
+				DEFAF5B723F04D9400BB5716 /* RearViewController.swift */,
 			);
 			path = TRNavigationBar;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				DEFAF58323F041F900BB5716 /* AppDelegate.swift in Sources */,
 				DEFAF58523F041F900BB5716 /* SceneDelegate.swift in Sources */,
 				DEFAF5B623F048E400BB5716 /* SWRevealViewController.m in Sources */,
+				DEFAF5B823F04D9400BB5716 /* RearViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J74H985T9L;
 				INFOPLIST_FILE = TRNavigationBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,6 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J74H985T9L;
 				INFOPLIST_FILE = TRNavigationBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
