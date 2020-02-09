@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var NavigationButtonLeft: UIBarButtonItem!
     @IBAction func NavigationbuttonRight(_ sender: Any) {
         let alert = UIAlertController(title: "Mail", message: "도착한 메시지가 없습니다.", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction.init(title: "확인", style: UIAlertAction.Style.default, handler: nil))
@@ -18,7 +19,13 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        NavigationButtonLeft.target = self.revealViewController()
+        NavigationButtonLeft.action = Selector("revealToggle:")
+
+        
+        //스와이프 제스처
+self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 
 

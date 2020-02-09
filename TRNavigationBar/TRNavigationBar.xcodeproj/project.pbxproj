@@ -15,6 +15,7 @@
 		DEFAF58F23F041FA00BB5716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFAF58D23F041FA00BB5716 /* LaunchScreen.storyboard */; };
 		DEFAF59A23F041FA00BB5716 /* TRNavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF59923F041FA00BB5716 /* TRNavigationBarTests.swift */; };
 		DEFAF5A523F041FA00BB5716 /* TRNavigationBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF5A423F041FA00BB5716 /* TRNavigationBarUITests.swift */; };
+		DEFAF5B623F048E400BB5716 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFAF5B523F048E400BB5716 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		DEFAF5A023F041FA00BB5716 /* TRNavigationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRNavigationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFAF5A423F041FA00BB5716 /* TRNavigationBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRNavigationBarUITests.swift; sourceTree = "<group>"; };
 		DEFAF5A623F041FA00BB5716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEFAF5B323F048E300BB5716 /* TRNavigationBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TRNavigationBar-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEFAF5B423F048E400BB5716 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		DEFAF5B523F048E400BB5716 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		DEFAF58123F041F900BB5716 /* TRNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				DEFAF5B223F0487800BB5716 /* Supporting File */,
 				DEFAF58223F041F900BB5716 /* AppDelegate.swift */,
 				DEFAF58423F041F900BB5716 /* SceneDelegate.swift */,
 				DEFAF58623F041F900BB5716 /* ViewController.swift */,
@@ -126,6 +131,16 @@
 				DEFAF5A623F041FA00BB5716 /* Info.plist */,
 			);
 			path = TRNavigationBarUITests;
+			sourceTree = "<group>";
+		};
+		DEFAF5B223F0487800BB5716 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				DEFAF5B423F048E400BB5716 /* SWRevealViewController.h */,
+				DEFAF5B523F048E400BB5716 /* SWRevealViewController.m */,
+				DEFAF5B323F048E300BB5716 /* TRNavigationBar-Bridging-Header.h */,
+			);
+			path = "Supporting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +211,7 @@
 				TargetAttributes = {
 					DEFAF57E23F041F900BB5716 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					DEFAF59423F041FA00BB5716 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -262,6 +278,7 @@
 				DEFAF58723F041F900BB5716 /* ViewController.swift in Sources */,
 				DEFAF58323F041F900BB5716 /* AppDelegate.swift in Sources */,
 				DEFAF58523F041F900BB5716 /* SceneDelegate.swift in Sources */,
+				DEFAF5B623F048E400BB5716 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TRNavigationBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
@@ -443,6 +461,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Terry.TRNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TRNavigationBar/Supporting File/TRNavigationBar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TRNavigationBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
@@ -461,6 +482,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Terry.TRNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TRNavigationBar/Supporting File/TRNavigationBar-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
