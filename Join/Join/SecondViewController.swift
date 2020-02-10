@@ -19,6 +19,8 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
     
     
     var imagePicker = UIImagePickerController()
+    
+    
     //MARK: - didLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,20 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
         img.addGestureRecognizer(imgTap)
         
         imagePicker.delegate = self 
-        
+
+        //TODO: 버튼 활성화 / 비활성화 / 유효성 검사
+        self.nextButton.isEnabled = false
+        if self.id.text?.isEmpty == true {
+            self.nextButton.isEnabled = false
+        }else if self.password.text?.isEmpty == true{
+            self.nextButton.isEnabled = false
+        }else if self.CheckPassword.text?.isEmpty == true{
+            self.nextButton.isEnabled = false
+        }else if self.password.text.self == self.password.text.self {
+            self.nextButton.isEnabled = true
+        }else{
+            self.nextButton.isEnabled = false
+        }
     }
     //MARK: - Action
     //단순한 입력폼, 단순한 팝업
@@ -37,19 +52,21 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
           self.dismiss(animated: true, completion: nil)
       }
     //MARK: - Func
-    func ckeckPassword(){
-        if self.password.text == self.CheckPassword.text {
-            print("같음")
-        }else{
-            print("다름")
-        }
+    //다음 버튼 활성화 / 비활성화
+    
+    @IBAction func checkPassword(_ sender: Any) {
+        
     }
     
+    
+    //imageview touch event 추가
     @objc func imageTapped(img: AnyObject){
         imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
         present(imagePicker, animated: true, completion: nil)
     }
+    
+    //앨범 불러오기
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
          if let originalImage: UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
              self.img.image = originalImage
