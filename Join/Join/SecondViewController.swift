@@ -8,27 +8,34 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     //MARK: - storyboard IBOutet
     @IBOutlet weak var id: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var CheckPassword: UITextField!
-    
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var img: UIImageView!
     
+    
+    var imagePicker = UIImagePickerController()
     //MARK: - didLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
-        ckeckPassword()
+//        ckeckPassword()
         // Do any additional setup after loading the view.
+        let imgTap = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
+        img.isUserInteractionEnabled = true
+        img.addGestureRecognizer(imgTap)
+        
+        imagePicker.delegate = self 
+        
     }
     //MARK: - Action
     //단순한 입력폼, 단순한 팝업
       @IBAction func didmissModal(){
           self.dismiss(animated: true, completion: nil)
       }
-    
     //MARK: - Func
     func ckeckPassword(){
         if self.password.text == self.CheckPassword.text {
@@ -36,9 +43,20 @@ class SecondViewController: UIViewController {
         }else{
             print("다름")
         }
-        
     }
-
+    
+    @objc func imageTapped(img: AnyObject){
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
+        present(imagePicker, animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+         if let originalImage: UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+             self.img.image = originalImage
+         }
+         self.dismiss(animated: true, completion: nil)
+         
+     }
     /*
     // MARK: - Navigation
 
