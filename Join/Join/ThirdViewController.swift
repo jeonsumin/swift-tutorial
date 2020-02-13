@@ -13,8 +13,7 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var DateLabel: UILabel!
     @IBOutlet weak var DatePicker: UIDatePicker!
-    
-       //시간 formatter 설정
+    //시간 formatter 설정
         let dateFormatter: DateFormatter = {
             let formatter:DateFormatter = DateFormatter()
             //formatter 기본 제공 스타일
@@ -28,8 +27,6 @@ class ThirdViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     @IBAction func changeDatePicker(_ sender: UIDatePicker){
@@ -41,10 +38,20 @@ class ThirdViewController: UIViewController {
         
         self.DateLabel.text = dateString
     }
+    
+    @IBAction func unwindToVC(_ segue: UIStoryboardSegue){ self.navigationController?.popToRootViewController(animated: true)
+       }
+  
     //단순한 입력폼, 단순한 팝업
-      @IBAction func didmissModal(){
-          self.dismiss(animated: true, completion: nil)
-      }
+
+    @IBAction func popToPrev(){
+           self.navigationController?.popViewController(animated: true)
+       }
+    
+    @IBAction func moveMain(_ sender: Any){
+
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

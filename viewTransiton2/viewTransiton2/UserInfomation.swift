@@ -1,9 +1,9 @@
 //
-//  UserInformation.swift
+//  UserInfomation.swift
 //  viewTransiton2
 //
-//  Created by iMac on 2020. 1. 30..
-//  Copyright © 2020년 iMac. All rights reserved.
+//  Created by Terry on 2020/02/12.
+//  Copyright © 2020 iMac. All rights reserved.
 //
 
 import Foundation
@@ -15,5 +15,6 @@ class UserInformation{
     
     var name: String?
     var age : String?
+    //var info : String?
     
 }

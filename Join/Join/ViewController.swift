@@ -14,9 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSLog("view did Load")
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+          self.id.text = UserInformation.shared.id
+    }
 
 }
 

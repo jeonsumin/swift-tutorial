@@ -13,7 +13,7 @@
 		8893C12823E30F45008EEEC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8893C12723E30F45008EEEC7 /* Assets.xcassets */; };
 		8893C12B23E30F45008EEEC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8893C12923E30F45008EEEC7 /* LaunchScreen.storyboard */; };
 		8893C13323E31102008EEEC7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C13223E31102008EEEC7 /* SecondViewController.swift */; };
-		8893C13523E31468008EEEC7 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C13423E31468008EEEC7 /* UserInformation.swift */; };
+		DE560C6923F449FA001F8794 /* UserInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE560C6823F449FA001F8794 /* UserInfomation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		8893C12A23E30F45008EEEC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8893C12C23E30F45008EEEC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8893C13223E31102008EEEC7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		8893C13423E31468008EEEC7 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
+		DE560C6823F449FA001F8794 /* UserInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfomation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +61,11 @@
 				8893C12023E30F44008EEEC7 /* AppDelegate.swift */,
 				8893C12223E30F44008EEEC7 /* ViewController.swift */,
 				8893C12423E30F44008EEEC7 /* Main.storyboard */,
-				8893C13423E31468008EEEC7 /* UserInformation.swift */,
 				8893C12723E30F45008EEEC7 /* Assets.xcassets */,
 				8893C12923E30F45008EEEC7 /* LaunchScreen.storyboard */,
 				8893C12C23E30F45008EEEC7 /* Info.plist */,
 				8893C13223E31102008EEEC7 /* SecondViewController.swift */,
+				DE560C6823F449FA001F8794 /* UserInfomation.swift */,
 			);
 			path = viewTransiton2;
 			sourceTree = "<group>";
@@ -142,9 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8893C13323E31102008EEEC7 /* SecondViewController.swift in Sources */,
-				8893C13523E31468008EEEC7 /* UserInformation.swift in Sources */,
 				8893C12323E30F44008EEEC7 /* ViewController.swift in Sources */,
 				8893C12123E30F44008EEEC7 /* AppDelegate.swift in Sources */,
+				DE560C6923F449FA001F8794 /* UserInfomation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

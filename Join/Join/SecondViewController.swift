@@ -17,47 +17,56 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var img: UIImageView!
     
-    
     var imagePicker = UIImagePickerController()
     
     
     //MARK: - didLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
-//        ckeckPassword()
-        // Do any additional setup after loading the view.
+        
+        //화면생성시 이미지피커 터치 이벤트 호출
         let imgTap = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
         img.isUserInteractionEnabled = true
         img.addGestureRecognizer(imgTap)
         
-        imagePicker.delegate = self 
-
-        //TODO: 버튼 활성화 / 비활성화 / 유효성 검사
+        //화면 생성시 이미지선택 델리게이트 호출
+        imagePicker.delegate = self
         self.nextButton.isEnabled = false
-        if self.id.text?.isEmpty == true {
-            self.nextButton.isEnabled = false
-        }else if self.password.text?.isEmpty == true{
-            self.nextButton.isEnabled = false
-        }else if self.CheckPassword.text?.isEmpty == true{
-            self.nextButton.isEnabled = false
-        }else if self.password.text.self == self.password.text.self {
+        
+    }
+    //MARK: - Action
+ 
+    @IBAction func popToPrev(){
+        self.navigationController?.popViewController(animated: true)
+        UserInformation.shared.id = nil
+         UserInformation.shared.password = nil
+    }
+    //MARK: - Func
+    //다음 버튼 활성화
+   
+    @IBAction func passwordCheck(_ sender: UITextField) {
+        if self.password.text! == self.CheckPassword.text! {
             self.nextButton.isEnabled = true
         }else{
             self.nextButton.isEnabled = false
         }
     }
-    //MARK: - Action
-    //단순한 입력폼, 단순한 팝업
-      @IBAction func didmissModal(){
-          self.dismiss(animated: true, completion: nil)
-      }
-    //MARK: - Func
-    //다음 버튼 활성화 / 비활성화
     
-    @IBAction func checkPassword(_ sender: Any) {
+    
+    //ActionButton
+    @IBAction func signUpButton(_ sender: UIButton) {
+        //textfield값 프로퍼티에 저장
+        UserInformation.shared.id = self.id.text
+        UserInformation.shared.password = self.password.text
         
     }
-    
+ 
+    @IBAction func cencelButton(){
+        UserInformation.shared.id = nil
+        UserInformation.shared.password = nil
+        self.navigationController?.popViewController(animated: true)
+        
+    }
     
     //imageview touch event 추가
     @objc func imageTapped(img: AnyObject){
@@ -71,6 +80,8 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
          if let originalImage: UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
              self.img.image = originalImage
          }
+        
+        
          self.dismiss(animated: true, completion: nil)
          
      }
