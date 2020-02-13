@@ -21,12 +21,20 @@ class ThirdViewController: UIViewController {
     //        formatter.timeStyle = .medium
             
             //사용자 지정 포멧형식 설정할 수 있음
-            formatter.dateFormat = "yyyy/MM/dd hh:mm:ss"
+            formatter.dateFormat = "yyyy.MM.dd"
             return formatter
         }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let selectDate = DatePicker.date
+        
+        let dateString:String = self.dateFormatter.string(from: selectDate)
+        
+        self.DateLabel.text = dateString
     }
     
     @IBAction func changeDatePicker(_ sender: UIDatePicker){
