@@ -47,9 +47,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     let dateFormatter: DateFormatter = {
         let formatter: DateFormatter = DateFormatter()
         formatter.dateStyle = .medium
+        return formatter
+    }()
+    
+    //time 포멧
+    let timeFormatter: DateFormatter = {
+        let formatter: DateFormatter = DateFormatter()
         formatter.timeStyle = .medium
         return formatter
     }()
+
+    
     //MARK: - TableView 필수 메소드
     
     
@@ -84,18 +92,24 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //cell의 재사용 메소드 dequeueReusableCell
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
-        
+      
         // 셀 데이터 지정 > 더미데이터
         if indexPath.section < 2{
+            let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
+                  
             let text: String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
             
             cell.textLabel?.text = text
+
+            return cell
         }else{
-            cell.textLabel?.text = self.dateFormatter.string(from: self.dates[indexPath.row])
+            let cell: CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: self.customCellIdentifier, for: indexPath) as! CustomTableViewCell
+            
+            cell.leftLabel.text = self.dateFormatter.string(from: self.dates[indexPath.row])
+            
+            cell.rightLabel.text = self.timeFormatter.string(from: self.dates[indexPath.row])
+            return cell
         }
-        
-         return cell
      }
    
     
