@@ -22,13 +22,49 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     //MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
+    
+    //MARK: - Identifier
     let cellIdentifier: String = "cell"
+    let customCellIdentifier: String = "customCell"
+    
+    //MARK: -Action
+    @IBAction func touchUpAddButton(_ sender: UIButton){
+        dates.append(Date())
+        
+//        self.tableView.reloadData()
+        //Table View에 추가할때 애니메이션 추가
+        self.tableView.reloadSections(IndexSet(2...2), with: UITableView.RowAnimation.automatic)
+    }
     
     //dumy data
     let korean: [String] = ["가","나","다","라","마","바","사","아","자","차","카","타","파","하"]
     let english: [String] = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-
+    
+    //데이터 저장 배열
+    var dates: [Date] = []
+    
+    //date 포멧
+    let dateFormatter: DateFormatter = {
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
+        return formatter
+    }()
     //MARK: - TableView 필수 메소드
+    
+    
+    //테이블뷰의 섹션 개수 지정
+       func numberOfSections(in tableView: UITableView) -> Int {
+           return 3
+       }
+       func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section < 2{
+           return section == 0 ? "한글" : "영어"
+        }
+        
+        return nil
+          
+       }
     
     //cell 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,6 +73,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             return korean.count
         case 1:
             return english.count
+        case 2:
+            return dates.count
         default:
             return 0
         }
@@ -49,19 +87,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
         
         // 셀 데이터 지정 > 더미데이터
-        let text: String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
-        
-        cell.textLabel?.text = text
+        if indexPath.section < 2{
+            let text: String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
+            
+            cell.textLabel?.text = text
+        }else{
+            cell.textLabel?.text = self.dateFormatter.string(from: self.dates[indexPath.row])
+        }
         
          return cell
      }
-    //테이블뷰의 섹션 개수 지정
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return section == 0 ? "한글" : "영어"
-    }
+   
     
 }
 

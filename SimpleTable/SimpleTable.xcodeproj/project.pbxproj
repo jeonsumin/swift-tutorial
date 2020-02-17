@@ -15,6 +15,7 @@
 		DEA3E63523FAB1D2000E4771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA3E63323FAB1D2000E4771 /* LaunchScreen.storyboard */; };
 		DEA3E64023FAB1D2000E4771 /* SimpleTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3E63F23FAB1D2000E4771 /* SimpleTableTests.swift */; };
 		DEA3E64B23FAB1D2000E4771 /* SimpleTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3E64A23FAB1D2000E4771 /* SimpleTableUITests.swift */; };
+		DEA3E65923FAB77A000E4771 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3E65823FAB77A000E4771 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DEA3E64623FAB1D2000E4771 /* SimpleTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA3E64A23FAB1D2000E4771 /* SimpleTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableUITests.swift; sourceTree = "<group>"; };
 		DEA3E64C23FAB1D2000E4771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA3E65823FAB77A000E4771 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTableViewCell.swift; path = SimpleTable/CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		DEA3E61C23FAB1D1000E4771 = {
 			isa = PBXGroup;
 			children = (
+				DEA3E65823FAB77A000E4771 /* CustomTableViewCell.swift */,
 				DEA3E62723FAB1D1000E4771 /* SimpleTable */,
 				DEA3E63E23FAB1D2000E4771 /* SimpleTableTests */,
 				DEA3E64923FAB1D2000E4771 /* SimpleTableUITests */,
@@ -261,6 +264,7 @@
 			files = (
 				DEA3E62D23FAB1D1000E4771 /* ViewController.swift in Sources */,
 				DEA3E62923FAB1D1000E4771 /* AppDelegate.swift in Sources */,
+				DEA3E65923FAB77A000E4771 /* CustomTableViewCell.swift in Sources */,
 				DEA3E62B23FAB1D1000E4771 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
