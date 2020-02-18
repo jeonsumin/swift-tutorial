@@ -91,16 +91,22 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
      //cell 데이터
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //cell의 재사용 메소드 dequeueReusableCell
-      
         // 셀 데이터 지정 > 더미데이터
         if indexPath.section < 2{
+
+            //cell의 재사용 메소드 dequeueReusableCell >> 큐에 쌓여있던 셀을 재사용하는한 셀을 가져와서 사용
             let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
                   
             let text: String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
             
             cell.textLabel?.text = text
 
+            if indexPath.row == 1 {
+                cell.backgroundColor = UIColor.red
+            } else {
+                cell.backgroundColor = UIColor.white
+            }
+            
             return cell
         }else{
             let cell: CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: self.customCellIdentifier, for: indexPath) as! CustomTableViewCell
@@ -111,7 +117,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             return cell
         }
      }
-   
-    
+    //MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+           // 세그가 여러개 일 경우 segue.identifier를 지정할 수 도 있음
+           
+           guard let nextViewController: SecondViewController = segue.destination as? SecondViewController else{
+               return
+           }
+           
+           guard let cell: UITableViewCell = sender as? UITableViewCell else{
+               return
+           }
+           
+           nextViewController.textToSet = cell.textLabel?.text
+        //프로퍼티에 세팅을 한다음에 값을 넘겨 주는 이유는 네이게이션 인스턴스는 생성이 되어있지만 뷰 데이터는 메모리에 올라가 있지 않은 상태이기 때문에 프로퍼티에 저장한 다음에 넘겨 주어야 한다.
+        
+        
+       }
 }
 
