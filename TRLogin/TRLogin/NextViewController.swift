@@ -10,11 +10,15 @@ import UIKit
 
 class NextViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+
+    
+    var receiveStr = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        label.text = receiveStr
         // Do any additional setup after loading the view.
     }
     

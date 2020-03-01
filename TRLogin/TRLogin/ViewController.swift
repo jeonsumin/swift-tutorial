@@ -23,6 +23,7 @@ class ViewController: UIViewController {
             
             alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            
         }
     }
     
@@ -34,5 +35,11 @@ class ViewController: UIViewController {
     }
 
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "login"){
+            let nextVC:NextViewController = segue.destination as! NextViewController
+            nextVC.receiveStr = id.text! + "님이 로그인 하셨습니다."
+        }
+    }
 }
 
