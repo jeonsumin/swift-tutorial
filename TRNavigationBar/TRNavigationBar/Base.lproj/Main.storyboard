@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="PJp-Vp-LzC">
-                                <rect key="frame" x="0.0" y="69" width="50.000000000000057" height="50"/>
+                                <rect key="frame" x="0.0" y="69" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9bw-Km-C4j"/>
                                     <constraint firstAttribute="width" constant="50" id="Qjj-lH-Cji"/>
