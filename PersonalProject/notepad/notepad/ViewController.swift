@@ -13,12 +13,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     //셀 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 0
     }
     
     //셀 데이터
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NoticSeg", for: indexPath)
+        
+        return cell
     }
     
     
