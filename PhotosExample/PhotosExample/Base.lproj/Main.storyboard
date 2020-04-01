@@ -30,6 +30,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="62j-gn-qeC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hpD-ge-E4I"/>
                                 </connections>
                             </tableView>
                         </subviews>

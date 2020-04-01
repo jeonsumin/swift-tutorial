@@ -9,12 +9,42 @@
 import UIKit
 import Photos
 
-class ViewController: UIViewController,UITableViewDataSource{
- 
+//PHPhotoLibraryChangeObserver: 라이브러리에 변화가 생기면 감지하겠다 라는 프로토콜
+class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, PHPhotoLibraryChangeObserver{
+    
+    
+    
     @IBOutlet weak var tableView: UITableView!
     var fetchResult: PHFetchResult<PHAsset>!
     let imageManager: PHCachingImageManager = PHCachingImageManager()
     let cellIdentifier: String = "cell"
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            //편집 모드로 들어왔을때 실행되는 메소드
+            let asset: PHAsset = self.fetchResult[indexPath.row]
+            
+            PHPhotoLibrary.shared().performChanges({PHAssetChangeRequest.deleteAssets([asset] as NSArray)}, completionHandler: nil)
+        }
+    }
+
+    //라이브러리에 변화가 생기면 감지하는 메소드
+    func photoLibraryDidChange(_ changeInstance: PHChange) {
+        guard let changes = changeInstance.changeDetails(for: fetchResult) else { return }
+        
+        fetchResult = changes.fetchResultAfterChanges
+        
+        
+        OperationQueue.main.addOperation {
+            self.tableView.reloadSections(IndexSet(0...0), with: .automatic)
+        }
+       }
+       
+    
     
     func requestCollection() {
         let cameraRoll: PHFetchResult<PHAssetCollection> = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .smartAlbumUserLibrary, options: nil)
@@ -61,6 +91,10 @@ class ViewController: UIViewController,UITableViewDataSource{
         @unknown default: break
             
         }
+        
+        //포토라이브러리가 변화될때마다 델리게이트 메소드가 호출 된다. 
+        PHPhotoLibrary.shared().register(self)
+        
         
     }
     
