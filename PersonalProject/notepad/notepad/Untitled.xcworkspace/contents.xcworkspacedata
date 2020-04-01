@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:../../../boostcourse/weatherToday"
+      name = "weatherToday">
+      <Group
+         location = "group:weatherToday"
+         name = "weatherToday">
+         <FileRef
+            location = "group:LastViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:countryDataset.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:snowy.imageset"
+               name = "snowy.imageset">
+               <FileRef
+                  location = "group:snowy~universal@1x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:snowy~universal@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:snowy~universal@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:flag_us.imageset"
+               name = "flag_us.imageset">
+               <FileRef
+                  location = "group:flag_us~universal@1x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_us~universal@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_us~universal@3x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:de.dataset"
+               name = "de.dataset">
+               <FileRef
+                  location = "group:de.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:flag_kr.imageset"
+               name = "flag_kr.imageset">
+               <FileRef
+                  location = "group:flag_kr~universal@1x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_kr~universal@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_kr~universal@3x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:flag_de.imageset"
+               name = "flag_de.imageset">
+               <FileRef
+                  location = "group:flag_de~universal@1x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_de~universal@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_de~universal@3x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:flag_fr.imageset"
+               name = "flag_fr.imageset">
+               <FileRef
+                  location = "group:flag_fr~universal@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_fr~universal@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_fr~universal@1x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:countries.dataset"
+               name = "countries.dataset">
+               <FileRef
+                  location = "group:countries.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:sunny.imageset"
+               name = "sunny.imageset">
+               <FileRef
+                  location = "group:sunny~universal@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:sunny~universal@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:sunny~universal@1x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Icon.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-40@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-40@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-83.5@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76.png">
+               </FileRef>
+               <FileRef
+                  location = "group:NotificationIcon~ipad@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:NotificationIcon~ipad.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-40.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:NotificationIcon@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50.png">
+               </FileRef>
+               <FileRef
+                  location = "group:ios-marketing.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:NotificationIcon@3x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:cloudy.imageset"
+               name = "cloudy.imageset">
+               <FileRef
+                  location = "group:cloudy~universal@1x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:cloudy~universal@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:cloudy~universal@2x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:it.dataset"
+               name = "it.dataset">
+               <FileRef
+                  location = "group:it.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <Group
+               location = "group:kr.dataset"
+               name = "kr.dataset">
+               <FileRef
+                  location = "group:kr.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:us.dataset"
+               name = "us.dataset">
+               <FileRef
+                  location = "group:us.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:fr.dataset"
+               name = "fr.dataset">
+               <FileRef
+                  location = "group:fr.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:flag_it.imageset"
+               name = "flag_it.imageset">
+               <FileRef
+                  location = "group:flag_it~universal@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_it~universal@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_it~universal@1x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:jp.dataset"
+               name = "jp.dataset">
+               <FileRef
+                  location = "group:jp.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:flag_jp.imageset"
+               name = "flag_jp.imageset">
+               <FileRef
+                  location = "group:flag_jp~universal@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_jp~universal@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:flag_jp~universal@1x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:rainy.imageset"
+               name = "rainy.imageset">
+               <FileRef
+                  location = "group:rainy~universal@1x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:rainy~universal@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:rainy~universal@2x.png">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <FileRef
+            location = "group:SecondController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:SceneDelegate.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:weatherToday.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:weatherTodayUITests"
+         name = "weatherTodayUITests">
+         <FileRef
+            location = "group:weatherTodayUITests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:weatherTodayTests"
+         name = "weatherTodayTests">
+         <FileRef
+            location = "group:weatherTodayTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:../../../boostcourse/Join"
+      name = "Join">
+      <Group
+         location = "group:JoinUITests"
+         name = "JoinUITests">
+         <FileRef
+            location = "group:JoinUITests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Join.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Join"
+         name = "Join">
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:ThirdViewController.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:logo.imageset"
+               name = "logo.imageset">
+               <FileRef
+                  location = "group:logo.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:AppIcon-1.appiconset"
+               name = "AppIcon-1.appiconset">
+               <FileRef
+                  location = "group:Icon.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-40@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-40@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-83.5@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76.png">
+               </FileRef>
+               <FileRef
+                  location = "group:NotificationIcon~ipad@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:NotificationIcon~ipad.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-40.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:NotificationIcon@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50.png">
+               </FileRef>
+               <FileRef
+                  location = "group:ios-marketing.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:NotificationIcon@3x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:UserInfomation.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <FileRef
+            location = "group:SecondViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:SceneDelegate.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:JoinTests"
+         name = "JoinTests">
+         <FileRef
+            location = "group:JoinTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
