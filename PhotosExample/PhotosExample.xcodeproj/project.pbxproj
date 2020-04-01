@@ -15,6 +15,7 @@
 		DE4D3D132434AE4F00A0A076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D3D112434AE4F00A0A076 /* LaunchScreen.storyboard */; };
 		DE4D3D1E2434AE4F00A0A076 /* PhotosExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D3D1D2434AE4F00A0A076 /* PhotosExampleTests.swift */; };
 		DE4D3D292434AE4F00A0A076 /* PhotosExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D3D282434AE4F00A0A076 /* PhotosExampleUITests.swift */; };
+		DE98FCD52434E8FE007AE27B /* ImageZoomUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE98FCD42434E8FE007AE27B /* ImageZoomUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DE4D3D242434AE4F00A0A076 /* PhotosExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4D3D282434AE4F00A0A076 /* PhotosExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosExampleUITests.swift; sourceTree = "<group>"; };
 		DE4D3D2A2434AE4F00A0A076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE98FCD42434E8FE007AE27B /* ImageZoomUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DE4D3D0F2434AE4F00A0A076 /* Assets.xcassets */,
 				DE4D3D112434AE4F00A0A076 /* LaunchScreen.storyboard */,
 				DE4D3D142434AE4F00A0A076 /* Info.plist */,
+				DE98FCD42434E8FE007AE27B /* ImageZoomUIViewController.swift */,
 			);
 			path = PhotosExample;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				DE4D3D0B2434AE4E00A0A076 /* ViewController.swift in Sources */,
 				DE4D3D072434AE4E00A0A076 /* AppDelegate.swift in Sources */,
 				DE4D3D092434AE4E00A0A076 /* SceneDelegate.swift in Sources */,
+				DE98FCD52434E8FE007AE27B /* ImageZoomUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
