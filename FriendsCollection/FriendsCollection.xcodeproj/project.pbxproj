@@ -15,6 +15,8 @@
 		DEEDA4F02438A30E007BDA5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEDA4EE2438A30E007BDA5D /* LaunchScreen.storyboard */; };
 		DEEDA4FB2438A30E007BDA5D /* FriendsCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDA4FA2438A30E007BDA5D /* FriendsCollectionTests.swift */; };
 		DEEDA5062438A30E007BDA5D /* FriendsCollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDA5052438A30E007BDA5D /* FriendsCollectionUITests.swift */; };
+		DEEDA5142438A547007BDA5D /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDA5132438A547007BDA5D /* FriendCollectionViewCell.swift */; };
+		DEEDA5162438A68F007BDA5D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDA5152438A68F007BDA5D /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DEEDA5012438A30E007BDA5D /* FriendsCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEDA5052438A30E007BDA5D /* FriendsCollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionUITests.swift; sourceTree = "<group>"; };
 		DEEDA5072438A30E007BDA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEEDA5132438A547007BDA5D /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendCollectionViewCell.swift; path = FriendsCollection/FriendCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEEDA5152438A68F007BDA5D /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Friend.swift; path = ../../MyFriends/MyFriends/Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		DEEDA4D72438A30D007BDA5D = {
 			isa = PBXGroup;
 			children = (
+				DEEDA5132438A547007BDA5D /* FriendCollectionViewCell.swift */,
 				DEEDA4E22438A30D007BDA5D /* FriendsCollection */,
 				DEEDA4F92438A30E007BDA5D /* FriendsCollectionTests */,
 				DEEDA5042438A30E007BDA5D /* FriendsCollectionUITests */,
@@ -99,6 +104,7 @@
 		DEEDA4E22438A30D007BDA5D /* FriendsCollection */ = {
 			isa = PBXGroup;
 			children = (
+				DEEDA5152438A68F007BDA5D /* Friend.swift */,
 				DEEDA4E32438A30D007BDA5D /* AppDelegate.swift */,
 				DEEDA4E52438A30D007BDA5D /* SceneDelegate.swift */,
 				DEEDA4E72438A30D007BDA5D /* ViewController.swift */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEDA5142438A547007BDA5D /* FriendCollectionViewCell.swift in Sources */,
 				DEEDA4E82438A30D007BDA5D /* ViewController.swift in Sources */,
+				DEEDA5162438A68F007BDA5D /* Friend.swift in Sources */,
 				DEEDA4E42438A30D007BDA5D /* AppDelegate.swift in Sources */,
 				DEEDA4E62438A30D007BDA5D /* SceneDelegate.swift in Sources */,
 			);
