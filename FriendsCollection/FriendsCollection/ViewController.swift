@@ -41,6 +41,21 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
+        let flowLayout: UICollectionViewFlowLayout //인스턴스생성
+        //프로퍼티값 세팅
+        flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets.zero
+        
+        flowLayout.minimumLineSpacing = 10//아이템간의 거리
+        flowLayout.minimumInteritemSpacing = 10
+        
+        let halfWidth: CGFloat = UIScreen.main.bounds.width / 2.0
+        flowLayout.estimatedItemSize = CGSize(width: halfWidth - 30 , height: 90) //예상사이즈 오토레이아웃을 적용해 놔서 가변적일 수 있어서 예상사이즈 세팅
+        
+        self.collectionView.collectionViewLayout = flowLayout //컬렉션뷰 레이아웃에 세팅 하기
+
+        
         //json 호출
         let jsonDecoder: JSONDecoder = JSONDecoder()
         guard let dataAsset:NSDataAsset = NSDataAsset(name: "friends") else {
