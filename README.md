@@ -14,7 +14,7 @@
 - [imagePicker](https://github.com/jeonsumin/swift-tutorial/tree/master/ImagePicker)
 ![](./resource/imagePicker.png)
 - [MyDatePicker](https://github.com/jeonsumin/swift-tutorial/tree/master/MyDatePicker)
-![](./resource/MyDatePicker.png)
+![](./resource/myDatePicker.png)
 - [MyFriends](https://github.com/jeonsumin/swift-tutorial/tree/master/MyFriends)
 ![](./resource/MyFriends.png)
 - [PhotosExample](https://github.com/jeonsumin/swift-tutorial/tree/master/PhotosExample)
@@ -40,7 +40,7 @@
 - [TRTableView](https://github.com/jeonsumin/swift-tutorial/tree/master/TRTableView)
 ![](./resource/TRTableView.png)
 - [VIewTransition](https://github.com/jeonsumin/swift-tutorial/tree/master/VIewTransition)
-![](./resource/VIewTransition.png)
+![](./resource/ViewTransition.png)
 - [viewTransiton2](https://github.com/jeonsumin/swift-tutorial/tree/master/viewTransiton2)
 ![](./resource/viewTransition2.png)
 
